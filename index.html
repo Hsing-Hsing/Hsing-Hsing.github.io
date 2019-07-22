@@ -70,6 +70,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-链表" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-07-22T14:48:25.000Z" itemprop="datePublished">2019-07-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">链表</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>新建文章：hexo new 标题  </p>
+<p>#include&lt;stdio.h&gt;  </p>
+<p>#include&lt;stdlib.h&gt;<br>struct  node{ //链表节点<br> int date;<br> node<em>next;<br>};<br>//创建链表（关键函数）<br>node</em>creat(int Array[]){<br> node <em>p,</em>pre,<em>head;  //pre保存当前结点的前驱结点，head为头节点<br> head=new node；//创建头节点<br> head-&gt;next=NULL;//头结点不需要数据域，指针域初始为NULL<br> pre=head;//记录pre为head<br> for(int i=0;i&lt;5;i++){<br>   p=new node; //新建结点<br>  //将Array[i]赋给新建的结点作为数据域，也可以scanf输入<br>p-&gt;data=Array[i];<br>p-&gt;next=NULL;//新结点的指针域为NULL<br>pre-&gt;next=p;//前驱结点的指针域设为当前新结点的地址<br>pre=p;//把pre设为p，作为下个结点的前驱结点<br>}<br>return head；//返回头结点指针<br>}<br>int main（）{<br>int Array[5]={5,3,2,4,1};<br>node</em>L=creat（Array）；//新建链表，返回的头指针head赋给L<br>L=L-&gt;next;//从第一个结点开始有数据域<br>while（L!=NULL）{<br> printf(“%d”,L-&gt;data);//输出每个结点的数据域<br> L=L-&gt;next；<br>}<br>return 0；<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjyek51fb0000qswbweoi5csn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-排序" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/title.html" class="article-date">
@@ -101,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyd5t8sr0000i0wbc3nuj5z6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjyek51g30004qswb6me15547" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
@@ -140,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyd5t8t30001i0wbemtj80y2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjyek51fl0001qswbg4sj2zne" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-first/">the first</a></li></ul>
@@ -191,7 +230,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyd5t8tf0003i0wbr31zphxb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjyek51fv0002qswbba9t4l19" class="article-share-link">Share</a>
       
       
     </footer>
@@ -244,6 +283,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/title.html">链表</a>
+          </li>
         
           <li>
             <a href="/title.html">排序与sort函数</a>
