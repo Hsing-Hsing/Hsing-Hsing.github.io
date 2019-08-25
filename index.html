@@ -70,6 +70,270 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pat1011" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-08-25T06:19:09.351Z" itemprop="datePublished">2019-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿—<br>title: pat1011<br>date: 2019-08-25 14:19:09</p>
+<h2 id="tags-PAT"><a href="#tags-PAT" class="headerlink" title="tags: PAT"></a>tags: PAT</h2><pre><code class="C++"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+<span class="comment">//定义一个结构体，依次封装wtt</span>
+<span class="class"><span class="keyword">struct</span> <span class="title">E</span>{</span>
+ <span class="keyword">double</span> W;
+ <span class="keyword">double</span> T;
+ <span class="keyword">double</span> L;
+
+}e[<span class="number">2</span>];
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>{
+<span class="keyword">double</span> ans,a1,a2,a3,temp;
+<span class="keyword">double</span> a[<span class="number">2</span>];
+<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">2</span>;i++){
+    <span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;e[i].W,&amp;e[i].T,&amp;e[i].L);
+    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">2</span>;j++){
+    <span class="keyword">if</span>(max(e[i].L,max(e[i].W,e[i].T))==e[i].L){
+        <span class="built_in">printf</span>(<span class="string">"L"</span>);
+        a[j]=e[i].L;
+    }
+    <span class="keyword">else</span> <span class="keyword">if</span>(max(e[i].L,max(e[i].W,e[i].T))==e[i].W){
+        <span class="built_in">printf</span>(<span class="string">"W"</span>);
+        a[j]=e[i].W;
+    }
+     <span class="keyword">else</span> {
+        <span class="built_in">printf</span>(<span class="string">"T"</span>);
+        a[j]=e[i].T;
+     }
+ }
+}</code></pre>
+<p> for(int j=3;j!=0;j–){<br>    temp+=a[j];</p>
+<p> }<br> ans =(temp*0.65-1.00)-2.00;<br> printf(“ %.2f”,&amp;ans);<br> return 0;<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aa50003akwb6i882ara" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-paython" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-08-23T15:48:40.000Z" itemprop="datePublished">2019-08-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">paython</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aah0007akwb1oyf5idq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MATLAB" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-08-21T14:09:58.969Z" itemprop="datePublished">2019-08-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿﻿﻿—<br>title: MATLAB<br>date: 2019-08-21 22:09:58</p>
+<h2 id="tags-MATLAB"><a href="#tags-MATLAB" class="headerlink" title="tags: MATLAB"></a>tags: MATLAB</h2><p>MATLB语法：</p>
+<p>向上箭头重新调用以前的命令</p>
+<p>clear清除工作区变量，clc清除命令行窗口</p>
+<p>pi表示Π</p>
+<p>abs绝对值，<br>eig特征值，<br>sqrt平方根，<br>round四舍五入为整数</p>
+<p>（*）执行矩阵乘法</p>
+<p>（.*）执行元素乘法</p>
+<p>空格或逗号-行向量</p>
+<p>；为列向量</p>
+<p>可组合使用空格和；来创建矩阵，但必须逐行输入</p>
+<p>[ ]内可执行计算</p>
+<p>起始值：指定间距：最终值</p>
+<p>linspace（起始值，最终值，元素数目）</p>
+<p>转置运算符’（x’）可行列互换</p>
+<pre><code>/*MATLAB 包含许多函数，可帮助您创建常用的矩阵，例如随机数矩阵。
+&gt;&gt; x = rand(2)
+x = 
+    0.8147    0.1270
+    0.9058    0.9134
+请注意，rand(2) 命令中的 2 指定输出将为一个 
+2×2 的随机数矩阵。
+用一个数创建方阵，两个数创建非方阵
+zeros创建全零方阵
+
+save foo x
+//将x保存到foo.mat中
+
+load foo
+//使用load命令从MAT文件加载变量
+
+v=data(6,3);
+//创建名为v的变量，其值为变量data中位于第6行第3列的值
+
+关键字end作为行或列来引用最后一个元素
+，可和算术运算一起使用
+
+用作索引时，冒号运算符（：）可指代改为度中的
+所有元素
+
+density=data（：，2）
+//创建一个名为density的变量，
+其中包含名为data的矩阵中第2列上的
+所有元素
+
+ max（）第一个输出为输入向量的最大值
+第二个输出为索引值
+
+doc 函数名
+//获取任何MATLAB函数信息
+
+
+/*</code></pre><p>#绘图</p>
+<p>plot（x，y，’可参考线条设定文<br>档颜色，线型，标记样式’，’属性名称’，属性值）</p>
+<p>hold on<br>//保留之前的绘图</p>
+<p>colse all<br>//关闭所有打开的图窗窗口</p>
+<p>###编写绘图注释</p>
+<p>title（’标签’）</p>
+<p>ylabel（’便签’）</p>
+<p>legend（’图例’,’图例’,’图例’）</p>
+<p>fft（计算向量的离散傅里叶变换）</p>
+<p>numel（返回数组中元素数目）</p>
+<p>v=v1(v1&lt;4)<br>//变量v包含v1中所有小于4的元素</p>
+<p>v1(v1&gt;5)=10<br>//将v1中所有大于5的元素都替换成10</p>
+<p>条件语句if、for循环需和end搭配</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aae0006akwb8uckfk0q" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-PAT-A1001" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-08-15T11:03:10.817Z" itemprop="datePublished">2019-08-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: PAT-A1001<br>date: 2019-08-15 19:03:10</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><pre><code class="C++"><span class="keyword">int</span> a,b,c,i=<span class="number">1</span>,s;
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>{
+    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;a,&amp;b);
+    c=a+b;
+    <span class="keyword">if</span>(c&lt;<span class="number">1000</span>&amp;&amp;c&gt;<span class="number">-1000</span>){
+        <span class="built_in">printf</span>(<span class="string">"%d"</span>,c);
+    }
+    <span class="keyword">else</span>
+    <span class="comment">//printf("%d",c);</span>
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5a9s0000akwb75xq8do2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-二分法查找" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-08-02T11:03:46.000Z" itemprop="datePublished">2019-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">二分法查找</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#二分法：寻找有序序列中第一个满足某条件的元素的位置</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//解决“寻求有序序列第一个满足某某条件的元素的位置”</span></span><br><span class="line"><span class="comment">//二分区间为左闭右闭的[left,right],初值必须能覆盖解的所有可能取值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> left,<span class="keyword">int</span> right)</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> mid;<span class="comment">//mid为left和right的中点</span></span><br><span class="line"><span class="keyword">while</span>(left&lt;right)&#123; <span class="comment">//对[left,right]来说，left==right意味着找到唯一位置</span></span><br><span class="line">mid=(left+right)/<span class="number">2</span>;<span class="comment">//取中点</span></span><br><span class="line"><span class="keyword">if</span>(条件成立)&#123;<span class="comment">//条件成立，第一个满足条件的元素的位置&lt;=mid</span></span><br><span class="line"> right=mid；<span class="comment">//往左子区间[left,mid]查找</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123; <span class="comment">//条件不成立，则第一个满足该条件的元素的位置&gt;mid</span></span><br><span class="line"> left=mid+<span class="number">1</span>;<span class="comment">//往右子区间&#123;mid+1,right查找</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> left；<span class="comment">//返回夹出来的位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aap000aakwbsr5q738u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-进程管理" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/title.html" class="article-date">
@@ -120,7 +384,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqxd000ihcwb15nd2u1u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5ab1000eakwb2diap1d8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/408操作系统/">408操作系统</a></li></ul>
@@ -174,7 +438,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqux0006hcwbm34l15ti" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5ab9000jakwb02owssl5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/408操作系统/">408操作系统</a></li></ul>
@@ -219,7 +483,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqv10007hcwb45ocwcmj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aay000dakwbrmvahhr6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PAT/">PAT</a></li></ul>
@@ -281,7 +545,7 @@ mp.clear();</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tque0003hcwb47o07f0g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aa30002akwbgqfg4ex6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PAT/">PAT</a></li></ul>
@@ -323,221 +587,7 @@ mp.clear();</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqu40001hcwb2fnqxizx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-链表" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/title.html" class="article-date">
-  <time datetime="2019-07-22T14:48:25.000Z" itemprop="datePublished">2019-07-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/title.html">链表</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿#链表  </p>
-<blockquote>
-<p>参考《算法笔记》   </p>
-</blockquote>
-<p>需要使用新结点时，临时分配相应大小的内存空间给新结点</p>
-<pre><code class="C"><span class="keyword">typename</span>*p=(<span class="keyword">typename</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">typename</span>)) ;     
-<span class="comment">//释放内存  </span>
-<span class="built_in">free</span>(p);  
-<span class="comment">//new运算（同malloc，属于C++）   </span>
-<span class="keyword">typename</span>*p=<span class="keyword">new</span> <span class="keyword">typename</span>;  
-<span class="comment">//释放内存  </span>
-<span class="keyword">delete</span>(p);    </code></pre>
-<p>链表的基本操作-for循环建立需要的链表  </p>
-<pre><code class="C++"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;  </span></span>
-<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;  </span></span>
-<span class="class"><span class="keyword">struct</span>  <span class="title">node</span>{</span> <span class="comment">//链表节点</span>
- <span class="keyword">int</span> date;
- node*next;
-};
-<span class="comment">//创建链表（关键函数）</span>
-<span class="function">node*<span class="title">creat</span><span class="params">(<span class="keyword">int</span> Array[])</span></span>{
- node *p,*pre,*head;  <span class="comment">//pre保存当前结点的前驱结点，head为头节点</span>
- head=<span class="keyword">new</span> node；<span class="comment">//创建头节点</span>
- head-&gt;next=<span class="literal">NULL</span>;<span class="comment">//头结点不需要数据域，指针域初始为NULL</span>
- pre=head;<span class="comment">//记录pre为head</span>
- <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++){
-   p=<span class="keyword">new</span> node; <span class="comment">//新建结点</span>
-  <span class="comment">//将Array[i]赋给新建的结点作为数据域，也可以scanf输入</span>
-p-&gt;data=Array[i];
-p-&gt;next=<span class="literal">NULL</span>;<span class="comment">//新结点的指针域为NULL</span>
-pre-&gt;next=p;<span class="comment">//前驱结点的指针域设为当前新结点的地址</span>
-pre=p;<span class="comment">//把pre设为p，作为下个结点的前驱结点</span>
-}
-<span class="keyword">return</span> head；<span class="comment">//返回头结点指针</span>
-}
-<span class="keyword">int</span> main（）{
-<span class="keyword">int</span> Array[<span class="number">5</span>]={<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>};
-node*L=creat（Array）；<span class="comment">//新建链表，返回的头指针head赋给L</span>
-L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
-<span class="keyword">while</span>（L!=<span class="literal">NULL</span>）{
- <span class="built_in">printf</span>(<span class="string">"%d"</span>,L-&gt;data);<span class="comment">//输出每个结点的数据域</span>
- L=L-&gt;next；
-}
-<span class="keyword">return</span> <span class="number">0</span>；
-}</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqx0000hhcwbircqtskv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-排序" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/title.html" class="article-date">
-  <time datetime="2019-07-21T14:12:53.000Z" itemprop="datePublished">2019-07-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/title.html">排序与sort函数</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>头文件<br>```C++</p>
-<p>#include<algorithm><br>    using namespace std;<br>    sort(首元素地址，尾元素地址的下一个地址，比较函数（cmp）)<br>//定义结构体<br>```C++<br>    struct node{<br>    int x,int y;<br>}ssd[10];<br>//将ssd数组按从大到小排序<br>bool cmp(node a,node b){<br>    return a.x&gt;b.x;<br>}<br>//x相等时，按照y从大到小排序<br>bool cmp(node a, node b){<br>    if (a.x!=b.x) return a.x&gt;b.x;<br>    else return a.y&gt;b.y;<br>}</algorithm></p>
-<blockquote>
-<p>参考资料：《算法笔记》<br><a href="https://i.y.qq.com/v8/playsong.html?songid=201263427&source=yqq#wechat_redirect" target="_blank" rel="noopener">Last Young Renegade</a></p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqus0005hcwb2juesety" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-xinxin" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/title.html" class="article-date">
-  <time datetime="2019-07-18T16:23:26.000Z" itemprop="datePublished">2019-07-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/title.html">xinxin</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>集齐七龙珠，开始召唤神龙！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqu90002hcwb4xxkh3t1" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-first/">the first</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/title.html" class="article-date">
-  <time datetime="2019-07-18T15:22:34.727Z" itemprop="datePublished">2019-07-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/title.html">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjyr5tqtu0000hcwbncuyvuh1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="cjzql5a9z0001akwbtf7a47mh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -548,6 +598,11 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+  </nav>
 
 </section>
         
@@ -579,7 +634,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li></ul>
     </div>
   </div>
 
@@ -592,23 +647,23 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       <ul>
         
           <li>
-            <a href="/title.html">进程管理</a>
+            <a href="/title.html">(no title)</a>
           </li>
         
           <li>
-            <a href="/title.html">操作系统概述</a>
+            <a href="/title.html">paython</a>
           </li>
         
           <li>
-            <a href="/title.html">贪心</a>
+            <a href="/title.html">(no title)</a>
           </li>
         
           <li>
-            <a href="/title.html">MAP</a>
+            <a href="/title.html">(no title)</a>
           </li>
         
           <li>
-            <a href="/title.html">MarkDown语法</a>
+            <a href="/title.html">二分法查找</a>
           </li>
         
       </ul>
