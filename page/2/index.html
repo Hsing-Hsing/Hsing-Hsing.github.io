@@ -70,6 +70,207 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-操作系统概述" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-07-28T11:38:00.000Z" itemprop="datePublished">2019-07-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">操作系统概述</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿#基本概念</p>
+<ol>
+<li>概念</li>
+<li>特征</li>
+<li>目标和功能<br>#发展与分类</li>
+<li>手工操作阶段</li>
+<li>批处理阶段</li>
+<li>分时操作系统</li>
+<li>实时操作系统</li>
+<li>网络操作系统和分布式计算机系统</li>
+<li>个人计算机操作系统<br>#运行环境</li>
+<li>运行机制</li>
+<li>中断和异常的概念</li>
+<li>系统调用<br>#体系结构</li>
+<li>大内核和微内核</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgopv000knwwbuq7l3dof" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/408操作系统/">408操作系统</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-贪心" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-07-27T13:05:03.000Z" itemprop="datePublished">2019-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">贪心</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#暮雪朝霜，毋改英雄气</p>
+<p><a href="http://www.kuwo.cn/yinyue/1558210" target="_blank" rel="noopener">everybody knows i love u</a></p>
+<p>##将26进制转换为10进制</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id=id*<span class="number">26</span>+(S[i]-<span class="string">'A'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>##区间贪心  </p>
+<p>```C++<br>//区间选点<br>I[i].y&lt;lastX<br>//区间不相交<br>I[i].y&lt;=lastX</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgopp000hnwwbifsja4py" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PAT/">PAT</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MAP" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-07-26T13:06:15.000Z" itemprop="datePublished">2019-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/title.html">MAP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#map:将任何形式的基本类型映射到任何基本类型</p>
+<p>##定义</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>&lt;映射前类型，映射后类型&gt;mp;</span><br><span class="line"><span class="comment">//字符串到整形的映射，必须用string,不能用char</span></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt;mp;</span><br></pre></td></tr></table></figure>
+
+<p>##访问</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过下标访问</span></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt;mp;</span><br><span class="line">mp[<span class="string">'c'</span>]=<span class="number">20</span>;</span><br><span class="line"><span class="comment">//通过迭代器访问</span></span><br><span class="line"><span class="built_in">map</span>&lt;typename1,typename2&gt;::iterator it;</span><br><span class="line">it-&gt;first;<span class="comment">//访问键</span></span><br><span class="line">it-&gt;second;<span class="comment">//访问值</span></span><br></pre></td></tr></table></figure>
+
+<p>##常用函数</p>
+<pre><code class="C++"><span class="comment">//find（）| O(logN)</span>
+<span class="built_in">map</span>&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt;::iterator it =mp.find(<span class="string">'b'</span>);
+<span class="comment">//erase()删除</span>
+<span class="comment">//mp.erase(it)|O(1)</span>
+<span class="built_in">map</span>&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt;::iterator it=mp.find(<span class="string">'b'</span>);
+mp.erase(it);<span class="comment">//删除b 2</span>
+<span class="comment">//mp.erase(key)|O(logN）</span>
+mp.erase(<span class="string">'b'</span>);<span class="comment">//删除键为b的映射，即b 2</span>
+<span class="comment">//删除一个区间内的所有元素</span>
+<span class="comment">//mp.erase(first,last)|O(last-first)</span>
+<span class="built_in">map</span>&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt;::iterator it=mp.find(<span class="string">'b'</span>);<span class="comment">//令it指向键为b的映射</span>
+mp.erase(it,mp.end());<span class="comment">//删除it之后所有的映射</span>
+<span class="comment">//size()获得map中映射的对数</span>
+mp.size()
+<span class="comment">//clear()清空map中的所有元素|O(N)</span>
+mp.clear();</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgoos0006nwwbt11yq4mw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PAT/">PAT</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MarkDown语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/title.html" class="article-date">
+  <time datetime="2019-07-22T15:49:46.568Z" itemprop="datePublished">2019-07-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿—<br>title: MarkDown语法<br>date: 2019-07-23 19:49:46</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>标题#（1-6个）分别对应1级-6级标题<br><em>斜体</em>:用星号包起来<br><strong>粗体</strong>：用星号星号包起来<br>代码块：用1前面的点x3加语言名包起来</p>
+<pre><code class="C++"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;&gt;</span></span></code></pre>
+<p>有序表1234567.加空格<br>无序表星号||_ 加空格</p>
+<pre><code>
+表格的写法：| 表头 | 表头 |
+| --- | --- |
+左对齐：---
+右对齐：---
+
+
+| 表头 | 表头 |
+| --- | --- |
+
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgonz0000nwwbzz7m4n1b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-链表" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/title.html" class="article-date">
@@ -141,7 +342,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjzql5ab6000hakwbe20cd9mw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgoqi000unwwb017bobli" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
@@ -184,7 +385,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aav000cakwb4w3dz9p0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgopm000gnwwbj7k0m5hl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
@@ -223,7 +424,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aal0009akwbeiae14ud" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgopa000bnwwbtntm8oot" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-first/">the first</a></li></ul>
@@ -274,7 +475,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/title.html" data-id="cjzql5aac0005akwbxlcyslat" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/title.html" data-id="ck5dwgooz0008nwwbpe4d7pd8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -312,7 +513,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/408操作系统/" style="font-size: 20px;">408操作系统</a> <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/PAT/" style="font-size: 20px;">PAT</a> <a href="/tags/the-first/" style="font-size: 10px;">the first</a>
+      <a href="/tags/408操作系统/" style="font-size: 15px;">408操作系统</a> <a href="/tags/C/" style="font-size: 15px;">C++</a> <a href="/tags/PAT/" style="font-size: 20px;">PAT</a> <a href="/tags/the-first/" style="font-size: 10px;">the first</a>
     </div>
   </div>
 
@@ -321,7 +522,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li></ul>
     </div>
   </div>
 
@@ -334,11 +535,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
       <ul>
         
           <li>
-            <a href="/title.html">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/title.html">paython</a>
+            <a href="/title.html">PAT1152</a>
           </li>
         
           <li>
@@ -350,7 +547,11 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
           </li>
         
           <li>
-            <a href="/title.html">二分法查找</a>
+            <a href="/title.html">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/title.html">(no title)</a>
           </li>
         
       </ul>
@@ -365,7 +566,7 @@ L=L-&gt;next;<span class="comment">//从第一个结点开始有数据域</span>
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 Hsing<br>
+      &copy; 2020 Hsing<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
